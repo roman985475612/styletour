@@ -1,0 +1,46 @@
+.main-header {
+
+    .menu-top {
+
+        .container {
+            padding: 0;
+        }
+
+        .navbar {
+            padding: 20px 0;
+            background: #fff;
+        }
+
+        .nav-link,
+        .dropdown-item {
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .nav-link {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .icon-flag {
+            margin-right: 5px;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            top: -2px;
+        }
+
+        .btn-cart {
+            margin-left: 10px;
+            padding: 5px 20px;
+            background-color: $color-red;
+            color: #fff;
+            text-transform: uppercase;
+            transition: .3s background;
+
+            &:hover {
+                background-color: lighten($color-red, 5%);
+            }
+        }
+    }
+}

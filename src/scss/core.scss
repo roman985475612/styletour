@@ -1,3 +1,17 @@
 body {
+    background-color: #ececec;
+    color: #000;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
 }

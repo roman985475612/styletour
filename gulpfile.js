@@ -28,7 +28,7 @@ task('clean', () => {
     return src([
         `${DIST_PATH}/**/*`, 
         `!${DIST_PATH}/img/**/*`,
-        `!${DIST_PATH}/fonts/**/*`,
+        `!${DIST_PATH}/webfonts/**/*`,
     ], {read: false})
         .pipe(rm())
 })
@@ -47,8 +47,8 @@ task('copy:html', () => {
 })
 
 task('copy:fonts', () => {
-    return src(`${SRC_PATH}/fonts/**/*.{woff,woff2}`)
-        .pipe(dest(`${DIST_PATH}/fonts`))
+    return src(`${SRC_PATH}/webfonts/**/*`)
+        .pipe(dest(`${DIST_PATH}/webfonts`))
 })
 
 task('scss', () => {
@@ -57,7 +57,7 @@ task('scss', () => {
         .pipe(concat('main.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
-        .pipe(px2rem())
+        // .pipe(px2rem())
         .pipe(gulpIf(env === 'prod', autoprefixer({
             browsers: ['last 2 versions'],
             cascade: true
@@ -94,8 +94,8 @@ task('img:webp', () => {
         .pipe(dest(`${DIST_PATH}/img`))
 })
 
-task('icons', () => {
-    return src(`${SRC_PATH}/images/icons/*.svg`)
+task('img:svg', () => {
+    return src(`${SRC_PATH}/img/i/*.svg`)
         .pipe(svgo({
             plugins: [
                 {
@@ -112,7 +112,7 @@ task('icons', () => {
                 }
             }
         }))
-        .pipe(dest(`${DIST_PATH}/images/icons`))
+        .pipe(dest(`${DIST_PATH}/img/i`))
 })
 
 task('server', () => {
