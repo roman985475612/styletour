@@ -1,0 +1,11 @@
+@mixin btn-red {
+    padding: 5px 20px;
+    background-color: $color-red;
+    color: #fff;
+    transition: .3s background;
+
+    &:hover {
+        background-color: lighten($color-red, 5%);
+    }
+
+}
