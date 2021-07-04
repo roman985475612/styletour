@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <title>Styletour</title>
 </head>
@@ -12,21 +13,21 @@
         <div class="menu-top">
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
                 <div class="container">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarHeader">
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">support</a>
-                      </li>
-                      <li class="nav-item">
+                        <li class="nav-item">
+                        <a class="nav-link nav-link--first-item" href="#">support</a>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="#">free shipping over $50</a>
-                      </li>
-                      <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="#">articles</a>
-                      </li>
-                      <li class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img class="icon-flag" src="img/i/united-kingdom.webp" alt="">
                             english
@@ -45,23 +46,23 @@
                                 </a>
                             </li>
                         </ul>
-                      </li>
-                      <li class="nav-item dropdown">
+                        </li>
+                        <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          currency: usd
+                            currency: usd
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#"><i class="fas fa-ruble-sign"></i> rub</a></li>
-                          <li><a class="dropdown-item" href="#"><i class="fas fa-euro-sign"></i> euro</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-ruble-sign"></i> rub</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-euro-sign"></i> euro</a></li>
                         </ul>
-                      </li>
+                        </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">login</a>
+                            <a class="nav-link" href="#">login</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">signup</a>
+                            <a class="nav-link" href="#">signup</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-cart" href="#">
@@ -69,8 +70,8 @@
                                 shopping cart
                             </a>
                         </li>
-                      </ul>
-                   </div>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -78,6 +79,54 @@
 
         <section class="section-carousel-header">
             <div id="carouselHeader" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="main-menu">
+                    <nav class="navbar navbar-expand-xl navbar-dark">
+                        <div class="container">
+                            <a class="navbar-brand navbar-brand--logo" href="index.html">
+                                <picture>
+                                    <source srcset="img/logo.webp">
+                                    <img src="img/logo.png" alt="logo">
+                                </picture>
+                            </a>
+                            <a class="navbar-brand navbar-brand--name" href="index.html">styletour</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarMain">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#women">women</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#men">men</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#kids">kids</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#accessories">accessories</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sale">sale</a>
+                                    </li>
+                                </ul>
+                                <form class="d-flex">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- /.main-menu -->
+
                 <div class="carousel-indicators-wrap">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -125,7 +174,58 @@
         <!-- /.section-carousel-header -->
     </header>
     <!-- /.main-header -->
+    
+    <section class="main-slogan">
+        <div class="container">
+            <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, delectus.</h1>
+        </div>
+    </section>
+    <!-- /.main-slogan -->
 
-    <script src="js/main.min.js"></script>
+    <section class="main-content">
+        <div class="container">
+            <div class="row">
+                <div class="main-content__sidebar col-md-3 order-2 order-md-1">
+                    <div class="widget">
+                        <h3 class="widget__title">Popular categories</h3>
+                        <ul class="widget__list">
+                            <li class="widget__item"><a class="widget__link" href="#">Performance collection</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Pants</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Woven Shirts</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Earth-Friendly Apparel</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Sweatshirts</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Infants</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Shorts</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#">Adult Essentials</a></li>
+                        </ul>
+                        <a class="widget__more" href="#">Show more</a>
+                    </div>
+                    <div class="widget">
+                        <h3 class="widget__title">Popular brands</h3>
+                        <ul class="widget__list">
+                            <li class="widget__item"><a class="widget__link" href="#creepiraterve">creepiraterve</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#tuentality">tuentality</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#cesstial">cesstial</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#brewtine">brewtine</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#handusnervishm">handusnervishm</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#hibbed">hibbed</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#beincolu">beincolu</a></li>
+                            <li class="widget__item"><a class="widget__link" href="#confrazzled">confrazzled</a></li>
+                        </ul>
+                        <a class="widget__more" href="#">Show more</a>
+                    </div>
+                </div>
+                <div class="main-content__content col-md-9 order-1 order-md-2">
+                    <div class="content">
+                        <h3 class="content__title">items on demand</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.main-content -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

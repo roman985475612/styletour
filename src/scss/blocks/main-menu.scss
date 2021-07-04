@@ -1,0 +1,43 @@
+.main-menu {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 30px;
+
+    .container {
+        background: $black;
+        border-radius: 5px;
+        height: 90px;
+
+        @media (max-width: 1200px) {
+            padding-bottom: 20px;
+            height: 100%;
+        }
+    }
+
+    .navbar {
+        background: transparent;
+        border: none;
+
+        &-brand {
+
+            &--logo {
+                align-self: flex-start; 
+            }
+
+            &--name {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 30px;
+            }
+        }
+
+        .nav-link {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-transform: capitalize;
+            color: $white;
+            font-size: 16px;
+        }
+    }
+}

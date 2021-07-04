@@ -3,12 +3,21 @@
     .menu-top {
 
         .container {
-            // padding: 0;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         .navbar {
             padding: 20px 0;
             background: #fff;
+        }
+
+        .navbar-nav {
+            margin-left: -10px;
+
+            @media (max-width: 1200px) {
+                margin-left: 0;
+            }
         }
 
         .nav-link,

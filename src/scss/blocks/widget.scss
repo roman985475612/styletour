@@ -1,0 +1,35 @@
+.widget {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid $gray-300;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+    }
+
+    &__list {
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__item {
+
+    }
+
+    &__link,
+    &__more {
+        display: block;
+        color: $black;
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+
+    &__more {
+        color: #358acd;
+    }
+}
