@@ -1,0 +1,15 @@
+.about-sidebar {
+    text-transform: capitalize;
+    
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        color: $color-grey;
+
+        &--color-blue {
+            color: $color-blue;
+        }
+    }
+}

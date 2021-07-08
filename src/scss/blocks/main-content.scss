@@ -1,11 +1,7 @@
 .main-content {
 
     &__sidebar {
-        padding: 50px 0 70px;
+        padding: 50px 30px 70px 0;
         border-right: 3px solid $gray-300;
-    }
-
-    &__content {
-        padding: 50px 30px 70px;
     }
 }

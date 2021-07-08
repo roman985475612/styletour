@@ -2,9 +2,12 @@
     padding: 5px 20px;
     background-color: $color-red;
     color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
     transition: .3s background;
 
     &:hover {
+        color: #fff;
         background-color: lighten($color-red, 5%);
     }
 

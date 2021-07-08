@@ -3,6 +3,23 @@
     padding-bottom: 30px;
     border-bottom: 3px solid $gray-300;
 
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    &--carousel {
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+
+            &__title {
+                text-transform: capitalize;
+            }
+        }
+    }
+
     &__title {
         margin-top: 0;
         margin-bottom: 30px;
@@ -30,6 +47,6 @@
     }
 
     &__more {
-        color: #358acd;
+        color: $color-blue;
     }
 }
