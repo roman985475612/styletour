@@ -1,0 +1,42 @@
+.contact-form {
+    padding: 45px 0;
+    background: $gray-100;
+    border-bottom: 1px solid $gray-300;
+
+    &__title {
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    &__input {
+        height: 50px;
+        width: 100%;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $color-orange;
+        }
+    }
+
+    &__btn {
+        height: 50px;
+        border: 1px solid transparent;
+        background: $color-orange;
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        transition: all .5s;
+
+        &:hover {
+            border: 1px solid transparent;
+            background: darken($color-orange, 15%);
+        }
+    }
+}

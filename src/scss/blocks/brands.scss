@@ -1,0 +1,50 @@
+.brands {
+    background: $white;
+
+    &__list {
+        padding: 35px 0;
+        list-style: none;
+    }
+
+    &__item {
+    }
+
+    .owl-nav {
+        position: relative;
+
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: -45px;
+            background: $gray-300 !important;
+            border-radius: 50% !important;
+            height: 30px;
+            width: 30px;
+            color: $white !important;
+            font-size: 30px !important;
+
+            span {
+                position: absolute;
+                top: -10px;
+                left: 10px;
+            }
+        }
+
+        .owl-prev {
+            left: -65px;
+        }
+
+        .owl-next {
+            right: -65px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .brands {
+        .owl-nav {
+            display: none;
+        }
+    }
+}
